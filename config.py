@@ -5,31 +5,31 @@ from logging.handlers import RotatingFileHandler
 
 
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8164530141:AAGmU4lSTiSM46VWEBAVW0eTe1O4X469cO8")
-API_ID = int(os.environ.get("API_ID", "29919530"))
-API_HASH = os.environ.get("API_HASH", "09e3e8468c536526c22e5d644de244ab")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "6779472292:AAGcZ5AF1p9BNWfvxUjeXtOF231W-JHkEJo")
+API_ID = int(os.environ.get("API_ID", "25953006"))
+API_HASH = os.environ.get("API_HASH", "d5850aeef7dd3d01fe6b698c0a0d4be8")
 
 
-OWNER_ID = int(os.environ.get("OWNER_ID", "5693924640"))
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://Karthik:karthik@cluster0.hgqri.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DB_NAME = os.environ.get("DB_NAME", "madflixbotz")
+OWNER_ID = int(os.environ.get("OWNER_ID", "1981280736"))
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://kfcinemas:kfcinemas11@kfcinemas.0as5a.mongodb.net/?retryWrites=true&w=majority&appName=kfcinemas")
+DB_NAME = os.environ.get("DB_NAME", "kfcinemas")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001874101657"))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002130007784"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002414431472"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002347607144"))
 
 
-FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "600")) # auto delete in seconds
+FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "5600")) # auto delete in seconds
 
 
 PORT = os.environ.get("PORT", "8080")
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "2"))
 
 
 
 try:
-    ADMINS=[6848088376]
-    for x in (os.environ.get("ADMINS", "6848088376").split()):
+    ADMINS=[5399755933]
+    for x in (os.environ.get("ADMINS", "5399755933").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -67,7 +67,7 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {mention}\n\n<b>You Need 
 
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6848088376)
+ADMINS.append(1981280736)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
